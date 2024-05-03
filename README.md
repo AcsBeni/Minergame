@@ -1,4 +1,1 @@
-f
-h
-g
-d
+Mike a bányász 
