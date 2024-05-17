@@ -25,5 +25,12 @@ namespace Minergame
             Form2 f2 = new Form2();
             f2.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Spawn spawn = new Spawn();
+            spawn.ShowDialog();
+        }
     }
 }
