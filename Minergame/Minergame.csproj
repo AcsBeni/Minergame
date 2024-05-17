@@ -123,6 +123,27 @@
     <Compile Include="Spawn.Designer.cs">
       <DependentUpon>Spawn.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Annabolt.resx">
+      <DependentUpon>Annabolt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annaboltbelül.resx">
+      <DependentUpon>Annaboltbelül.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banyaszas.resx">
+      <DependentUpon>Banyaszas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barlang.resx">
+      <DependentUpon>Barlang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barrybolt.resx">
+      <DependentUpon>Barrybolt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barryboltbelseje.resx">
+      <DependentUpon>Barryboltbelseje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="End.resx">
+      <DependentUpon>End.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +159,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Spawn.resx">
+      <DependentUpon>Spawn.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
