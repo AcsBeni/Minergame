@@ -16,5 +16,12 @@ namespace Minergame
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Annabolt bolt = new Annabolt();
+            bolt.ShowDialog();
+        }
     }
 }

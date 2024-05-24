@@ -1,7 +1,7 @@
 ﻿
 namespace Minergame
 {
-    partial class Form2
+    partial class keszitok
     {
         /// <summary>
         /// Required designer variable.
@@ -113,7 +113,7 @@ namespace Minergame
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
             // 
-            // Form2
+            // keszitok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,8 +126,8 @@ namespace Minergame
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "keszitok";
+            this.Text = "Készítők";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

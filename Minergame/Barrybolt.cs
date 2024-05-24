@@ -16,5 +16,19 @@ namespace Minergame
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Barryboltbelseje belul = new Barryboltbelseje();
+            belul.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Spawn spawn = new Spawn();
+            spawn.ShowDialog();
+        }
     }
 }

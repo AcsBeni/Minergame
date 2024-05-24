@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Minergame
 {
-    public partial class Form1 : Form
+    public partial class kezdo : Form
     {
-        public Form1()
+        public kezdo()
         {
             InitializeComponent();
             this.CenterToScreen();
@@ -22,7 +22,7 @@ namespace Minergame
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
+            keszitok f2 = new keszitok();
             f2.ShowDialog();
         }
 
