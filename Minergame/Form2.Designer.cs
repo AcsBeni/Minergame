@@ -95,6 +95,7 @@ namespace Minergame
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Minergame.Properties.Resources.keret;
             this.pictureBox3.Location = new System.Drawing.Point(45, 65);
             this.pictureBox3.Name = "pictureBox3";
@@ -105,6 +106,7 @@ namespace Minergame
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Minergame.Properties.Resources.keret;
             this.pictureBox4.Location = new System.Drawing.Point(560, 65);
             this.pictureBox4.Name = "pictureBox4";
@@ -118,6 +120,7 @@ namespace Minergame
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImage = global::Minergame.Properties.Resources.Háttérrólunk;
             this.ClientSize = new System.Drawing.Size(1064, 761);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

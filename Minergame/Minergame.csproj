@@ -218,5 +218,71 @@
   <ItemGroup>
     <None Include="Resources\Háttér.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hátter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kőbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kőbutton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Háttérrólunk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annaboltja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berryboltja1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vascsákány.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GyémántCsákány.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmetisztCsákány.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UrániumCsákány.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emeráldcsákány.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProCsákány.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Csizma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Multiplieritem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mininghaste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Szerencsejáték.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sapka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annathanksemoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annanormalemoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berrythanksemoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berrynormalemoji.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
