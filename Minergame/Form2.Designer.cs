@@ -129,6 +129,7 @@ namespace Minergame
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
+            this.DoubleBuffered = true;
             this.Name = "keszitok";
             this.Text = "Készítők";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -97,6 +97,7 @@
     <Compile Include="Barryboltbelseje.Designer.cs">
       <DependentUpon>Barryboltbelseje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core.cs" />
     <Compile Include="End.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +115,9 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gameobjects\Player.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -149,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gameobjects\Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

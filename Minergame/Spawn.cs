@@ -21,67 +21,41 @@ namespace Minergame
         private void Spawn_KeyDown(object sender, KeyEventArgs e)
         {
 
-           
-            if (e.KeyCode == Keys.Right)
-            {
-                if (Player.Location.X + Player.Size.Width < 1000)
-                {
-                    Player.Location = new Point(Player.Location.X + 15, Player.Location.Y);
+            if (e.KeyCode == Core.Keyup)
+                Core.IsUp = true;
+            if (e.KeyCode == Core.Keydown)
+                Core.IsDown = true;
+            if (e.KeyCode == Core.Keyright)
+                Core.IsRight = true;
+            if (e.KeyCode == Core.KeyLeft)
+                Core.IsLeft = true;
 
 
-                }
-
-            }
-            if (e.KeyCode == Keys.Left)
-            {
-                if (Player.Location.X + Player.Size.Width > 130)
-                {
-                    Player.Location = new Point(Player.Location.X - 15, Player.Location.Y);
-
-
-
-                }
-            }
-            if (e.KeyCode == Keys.Up)
-            {
-                if (Player.Location.Y + Player.Size.Height > 220)
-                {
-                    Player.Location = new Point(Player.Location.X, Player.Location.Y - 15);
-
-
-                }
-            }
-            if (e.KeyCode == Keys.Down)
-            {
-                if (Player.Location.Y + Player.Size.Height < 750)
-                {
-                    Player.Location = new Point(Player.Location.X, Player.Location.Y + 15);
-                }
-            }
-            if (e.KeyCode == Keys.E)
-            {
-                if (Player.Bounds.IntersectsWith(bejárat.Bounds))
-                {
-                    this.Hide();
-                    Barlang cave = new Barlang();
-                    cave.ShowDialog();
-                }
-                else if (Player.Bounds.IntersectsWith(Anna.Bounds))
-                {
-                    this.Hide();
-                    Annabolt bolt = new Annabolt();
-                    bolt.ShowDialog();
-                }
-                else if (Player.Bounds.IntersectsWith(Barry.Bounds))
-                {
-                    this.Hide();
-                    Barrybolt bolt = new Barrybolt();
-                    bolt.ShowDialog();
-                }
-            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Spawn_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Core.Keyup)
+                Core.IsUp = false;
+            if (e.KeyCode == Core.Keydown)
+                Core.IsDown = false;
+            if (e.KeyCode == Core.Keyright)
+                Core.IsRight = false;
+            if (e.KeyCode == Core.KeyLeft)
+                Core.IsLeft = false;
+        }
+
+        private void Spawn_Load(object sender, EventArgs e)
+        {
+            KeyPreview = true;
+        }
+
+        private void player1_Load(object sender, EventArgs e)
         {
             
         }
