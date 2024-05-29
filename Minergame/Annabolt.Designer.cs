@@ -63,6 +63,7 @@ namespace Minergame
             this.ClientSize = new System.Drawing.Size(1064, 761);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Name = "Annabolt";
             this.Text = "Annabolt";
             this.ResumeLayout(false);

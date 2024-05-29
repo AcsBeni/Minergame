@@ -21,8 +21,8 @@ namespace Minergame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            kezdo f1 = new kezdo();
+            this.Close();
+            kezdo f1 = new kezdo();      
             f1.ShowDialog();
         }
     }

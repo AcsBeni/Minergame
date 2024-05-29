@@ -15,11 +15,12 @@ namespace Minergame
         public Annabolt()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Spawn spawn = new Spawn();
             spawn.ShowDialog();
         }

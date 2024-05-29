@@ -173,6 +173,16 @@ namespace Minergame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Csákány {
+            get {
+                object obj = ResourceManager.GetObject("Csákány", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Csizma {
             get {
                 object obj = ResourceManager.GetObject("Csizma", resourceCulture);

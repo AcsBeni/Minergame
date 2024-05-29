@@ -15,6 +15,7 @@ namespace Minergame
         public Banyaszas()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
     }
 }

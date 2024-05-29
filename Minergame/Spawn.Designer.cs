@@ -49,6 +49,7 @@ namespace Minergame
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 33;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -64,7 +65,7 @@ namespace Minergame
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(492, 150);
+            this.pictureBox1.Location = new System.Drawing.Point(829, 188);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 8;
@@ -84,11 +85,12 @@ namespace Minergame
             // Interactbutton
             // 
             this.Interactbutton.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Interactbutton.Location = new System.Drawing.Point(141, 493);
+            this.Interactbutton.Location = new System.Drawing.Point(289, 24);
             this.Interactbutton.Name = "Interactbutton";
             this.Interactbutton.Size = new System.Drawing.Size(26, 29);
             this.Interactbutton.TabIndex = 5;
             this.Interactbutton.TabStop = false;
+            this.Interactbutton.Visible = false;
             // 
             // bejárat
             // 
@@ -124,7 +126,7 @@ namespace Minergame
             // player1
             // 
             this.player1.BackColor = System.Drawing.Color.Transparent;
-            this.player1.Location = new System.Drawing.Point(364, 355);
+            this.player1.Location = new System.Drawing.Point(421, 364);
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(90, 135);
             this.player1.TabIndex = 9;
@@ -136,14 +138,14 @@ namespace Minergame
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(1064, 761);
+            this.Controls.Add(this.Interactbutton);
+            this.Controls.Add(this.bejárat);
+            this.Controls.Add(this.Barry);
+            this.Controls.Add(this.Anna);
             this.Controls.Add(this.player1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Goldamount);
             this.Controls.Add(this.Gold);
-            this.Controls.Add(this.Interactbutton);
-            this.Controls.Add(this.bejárat);
-            this.Controls.Add(this.Anna);
-            this.Controls.Add(this.Barry);
             this.MaximumSize = new System.Drawing.Size(1080, 800);
             this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Spawn";

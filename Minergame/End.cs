@@ -15,6 +15,7 @@ namespace Minergame
         public End()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
     }
 }

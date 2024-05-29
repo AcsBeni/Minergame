@@ -291,5 +291,8 @@
   <ItemGroup>
     <None Include="Resources\Berrynormalemoji.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Csákány.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

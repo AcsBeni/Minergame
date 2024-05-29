@@ -15,6 +15,7 @@ namespace Minergame
         public Barlang()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
     }
 }

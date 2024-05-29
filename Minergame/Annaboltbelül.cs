@@ -15,11 +15,12 @@ namespace Minergame
         public Annaboltbelül()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Annabolt bolt = new Annabolt();
             bolt.ShowDialog();
         }
