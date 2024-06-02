@@ -294,5 +294,11 @@
   <ItemGroup>
     <None Include="Resources\Csákány.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vásárlásháttér.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vásárlásháttér1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

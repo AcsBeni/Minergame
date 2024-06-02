@@ -63,7 +63,7 @@ namespace Minergame
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::Minergame.Properties.Resources.Berrythanksemoji;
-            this.pictureBox7.Location = new System.Drawing.Point(910, 502);
+            this.pictureBox7.Location = new System.Drawing.Point(929, 486);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(132, 111);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -72,60 +72,66 @@ namespace Minergame
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Minergame.Properties.Resources.ProCsákány;
-            this.pictureBox6.Location = new System.Drawing.Point(644, 373);
+            this.pictureBox6.Location = new System.Drawing.Point(678, 444);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(156, 201);
+            this.pictureBox6.Size = new System.Drawing.Size(245, 324);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 7;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Minergame.Properties.Resources.Emeráldcsákány;
-            this.pictureBox5.Location = new System.Drawing.Point(434, 373);
+            this.pictureBox5.Location = new System.Drawing.Point(387, 444);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(156, 201);
+            this.pictureBox5.Size = new System.Drawing.Size(245, 324);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Minergame.Properties.Resources.UrániumCsákány;
-            this.pictureBox4.Location = new System.Drawing.Point(238, 373);
+            this.pictureBox4.Location = new System.Drawing.Point(87, 444);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(156, 201);
+            this.pictureBox4.Size = new System.Drawing.Size(245, 324);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Minergame.Properties.Resources.AmetisztCsákány;
-            this.pictureBox3.Location = new System.Drawing.Point(644, 123);
+            this.pictureBox3.Location = new System.Drawing.Point(680, 64);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(156, 201);
+            this.pictureBox3.Size = new System.Drawing.Size(245, 324);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Minergame.Properties.Resources.GyémántCsákány;
-            this.pictureBox2.Location = new System.Drawing.Point(434, 123);
+            this.pictureBox2.Location = new System.Drawing.Point(387, 64);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(156, 201);
+            this.pictureBox2.Size = new System.Drawing.Size(245, 324);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Minergame.Properties.Resources.Vascsákány;
-            this.pictureBox1.Location = new System.Drawing.Point(238, 123);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 64);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 201);
+            this.pictureBox1.Size = new System.Drawing.Size(245, 324);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -134,7 +140,7 @@ namespace Minergame
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::Minergame.Properties.Resources.Berrynormalemoji;
-            this.pictureBox8.Location = new System.Drawing.Point(910, 589);
+            this.pictureBox8.Location = new System.Drawing.Point(929, 576);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(132, 111);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -145,6 +151,7 @@ namespace Minergame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Minergame.Properties.Resources.Vásárlásháttér;
             this.ClientSize = new System.Drawing.Size(1064, 761);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
