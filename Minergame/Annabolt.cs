@@ -20,7 +20,7 @@ namespace Minergame
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Spawn spawn = new Spawn();
             spawn.ShowDialog();
         }

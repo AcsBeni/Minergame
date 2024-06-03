@@ -91,6 +91,7 @@ namespace Minergame
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox5
             // 
@@ -102,6 +103,7 @@ namespace Minergame
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -113,6 +115,7 @@ namespace Minergame
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox2
             // 
@@ -124,6 +127,7 @@ namespace Minergame
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -135,6 +139,7 @@ namespace Minergame
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
             // 
@@ -146,6 +151,7 @@ namespace Minergame
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Annaboltbelül
             // 
@@ -162,6 +168,7 @@ namespace Minergame
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox8);
+            this.DoubleBuffered = true;
             this.Name = "Annaboltbelül";
             this.Text = "Annaboltbelül";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
