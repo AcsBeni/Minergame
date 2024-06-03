@@ -13,7 +13,7 @@ namespace Minergame.Gameobjects
         private System.ComponentModel.IContainer components;
         private PictureBox pictureBox1;
 
-        private int speed = 10;
+        private int speed = 25;
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -25,9 +25,9 @@ namespace Minergame.Gameobjects
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Minergame.Properties.Resources.Mike;
-            this.pictureBox1.Location = new System.Drawing.Point(-23, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-56, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 135);
+            this.pictureBox1.Size = new System.Drawing.Size(231, 186);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -42,8 +42,9 @@ namespace Minergame.Gameobjects
             // Player
             // 
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.Name = "Player";
-            this.Size = new System.Drawing.Size(91, 135);
+            this.Size = new System.Drawing.Size(125, 186);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -56,17 +57,13 @@ namespace Minergame.Gameobjects
         private void Update(object sender, EventArgs e)
         {
             if (Core.IsUp)
-                if (Top >= 100)
-                    Top -= speed;
+                Top -= speed;
             if (Core.IsDown)
-                if (Top <= 600)
-                    Top += speed;
+                Top += speed;
             if (Core.IsRight)
-                if (Left <= 800)
-                    Left += speed;
-            if (Core.IsLeft)
-                if (Left >= 20)
-                    Left -= speed;
+                Left += speed;
+            if (Core.IsLeft) 
+                Left -= speed;
 
 
 

@@ -24,13 +24,13 @@ namespace Minergame
         {
 
             if (e.KeyCode == Core.Keyup)
-                Core.IsUp = true;
+                 Core.IsUp = true;
             if (e.KeyCode == Core.Keydown)
-                Core.IsDown = true;
+                 Core.IsDown = true;
             if (e.KeyCode == Core.Keyright)
-                Core.IsRight = true;
+                 Core.IsRight = true;
             if (e.KeyCode == Core.KeyLeft)
-                Core.IsLeft = true;
+                 Core.IsLeft = true;
 
             if (e.KeyCode == Keys.E)
             {
@@ -60,23 +60,32 @@ namespace Minergame
         {
             if (player1.Bounds.IntersectsWith(Anna.Bounds))
             {
-                Interactbutton.Location = new Point(player1.Location.X + 35, player1.Location.Y-20);
+                Interactbutton.Location = new Point(player1.Location.X + 50, player1.Location.Y-30);
                 Interactbutton.Visible = true;
 
             }
             else if (player1.Bounds.IntersectsWith(Barry.Bounds))
             {
-                Interactbutton.Location = new Point(player1.Location.X + 35, player1.Location.Y - 20);
+                Interactbutton.Location = new Point(player1.Location.X + 50, player1.Location.Y - 30);
                 Interactbutton.Visible = true;
             }
             else if (player1.Bounds.IntersectsWith(bejárat.Bounds))
             {
-                Interactbutton.Location = new Point(player1.Location.X + 35, player1.Location.Y - 20);
+                Interactbutton.Location = new Point(player1.Location.X + 50, player1.Location.Y - 30);
                 Interactbutton.Visible = true;
             }
             else
             {
                 Interactbutton.Visible = false;
+            }
+            if (player1.Bounds.IntersectsWith(Hazteto.Bounds))
+            {
+                Hazteto.Visible = false;
+
+            }
+            else
+            {
+                Hazteto.Visible = true;
             }
         }
 
