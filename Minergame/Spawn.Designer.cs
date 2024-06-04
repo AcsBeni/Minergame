@@ -38,8 +38,8 @@ namespace Minergame
             this.bejárat = new System.Windows.Forms.PictureBox();
             this.Anna = new System.Windows.Forms.PictureBox();
             this.Barry = new System.Windows.Forms.PictureBox();
-            this.player1 = new Minergame.Gameobjects.Player();
             this.Hazteto = new System.Windows.Forms.PictureBox();
+            this.player2 = new Minergame.Gameobjects.Player();
             ((System.ComponentModel.ISupportInitialize)(this.Gold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bejárat)).BeginInit();
@@ -118,14 +118,6 @@ namespace Minergame
             this.Barry.TabIndex = 2;
             this.Barry.TabStop = false;
             // 
-            // player1
-            // 
-            this.player1.BackColor = System.Drawing.Color.Transparent;
-            this.player1.Location = new System.Drawing.Point(398, 362);
-            this.player1.Name = "player1";
-            this.player1.Size = new System.Drawing.Size(164, 191);
-            this.player1.TabIndex = 8;
-            // 
             // Hazteto
             // 
             this.Hazteto.Location = new System.Drawing.Point(113, 111);
@@ -133,6 +125,14 @@ namespace Minergame
             this.Hazteto.Size = new System.Drawing.Size(214, 321);
             this.Hazteto.TabIndex = 9;
             this.Hazteto.TabStop = false;
+            // 
+            // player2
+            // 
+            this.player2.BackColor = System.Drawing.Color.Transparent;
+            this.player2.Location = new System.Drawing.Point(373, 430);
+            this.player2.Name = "player2";
+            this.player2.Size = new System.Drawing.Size(125, 186);
+            this.player2.TabIndex = 10;
             // 
             // Spawn
             // 
@@ -142,9 +142,9 @@ namespace Minergame
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1064, 761);
+            this.Controls.Add(this.player2);
             this.Controls.Add(this.bejárat);
             this.Controls.Add(this.Hazteto);
-            this.Controls.Add(this.player1);
             this.Controls.Add(this.Interactbutton);
             this.Controls.Add(this.Barry);
             this.Controls.Add(this.Anna);
@@ -179,5 +179,6 @@ namespace Minergame
         private System.Windows.Forms.Label Goldamount;
         private Gameobjects.Player player1;
         private System.Windows.Forms.PictureBox Hazteto;
+        private Gameobjects.Player player2;
     }
 }

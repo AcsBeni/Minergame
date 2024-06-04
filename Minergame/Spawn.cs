@@ -34,20 +34,20 @@ namespace Minergame
 
             if (e.KeyCode == Keys.E)
             {
-                if (player1.Bounds.IntersectsWith(Anna.Bounds))
+                if (player2.Bounds.IntersectsWith(Anna.Bounds))
                 {
                     
                     this.Hide();
                     Annabolt belul = new Annabolt();
                     belul.ShowDialog();
                 }
-                if (player1.Bounds.IntersectsWith(Barry.Bounds))
+                if (player2.Bounds.IntersectsWith(Barry.Bounds))
                 {
                     this.Hide();
                     Barrybolt belul = new Barrybolt();
                     belul.ShowDialog();
                 }
-                if (player1.Bounds.IntersectsWith(bejárat.Bounds))
+                if (player2.Bounds.IntersectsWith(bejárat.Bounds))
                 {
                     this.Hide();
                     Barlang belul = new Barlang();
@@ -58,27 +58,28 @@ namespace Minergame
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (player1.Bounds.IntersectsWith(Anna.Bounds))
+            nemfutszki();
+            if (player2.Bounds.IntersectsWith(Anna.Bounds))
             {
-                Interactbutton.Location = new Point(player1.Location.X + 50, player1.Location.Y-30);
+                Interactbutton.Location = new Point(player2.Location.X + 50, player2.Location.Y-30);
                 Interactbutton.Visible = true;
 
             }
-            else if (player1.Bounds.IntersectsWith(Barry.Bounds))
+            else if (player2.Bounds.IntersectsWith(Barry.Bounds))
             {
-                Interactbutton.Location = new Point(player1.Location.X + 50, player1.Location.Y - 30);
+                Interactbutton.Location = new Point(player2.Location.X + 50, player2.Location.Y - 30);
                 Interactbutton.Visible = true;
             }
-            else if (player1.Bounds.IntersectsWith(bejárat.Bounds))
+            else if (player2.Bounds.IntersectsWith(bejárat.Bounds))
             {
-                Interactbutton.Location = new Point(player1.Location.X + 50, player1.Location.Y - 30);
+                Interactbutton.Location = new Point(player2.Location.X + 50, player2.Location.Y - 30);
                 Interactbutton.Visible = true;
             }
             else
             {
                 Interactbutton.Visible = false;
             }
-            if (player1.Bounds.IntersectsWith(Hazteto.Bounds))
+            if (player2.Bounds.IntersectsWith(Hazteto.Bounds))
             {
                 Hazteto.Visible = false;
 
@@ -86,6 +87,26 @@ namespace Minergame
             else
             {
                 Hazteto.Visible = true;
+            }
+        }
+
+        private void nemfutszki()
+        {
+            if (player2.Bounds.Location.Y > 580)
+            {
+                player2.Location = new Point(player2.Location.X, 570);
+            }
+            else if (player2.Bounds.Location.Y < 250)
+            {
+                player2.Location = new Point(player2.Location.X, 260);
+            }
+            if (player2.Bounds.Location.X > 800)
+            {
+                player2.Location = new Point(790, player2.Location.Y);
+            }
+            else if (player2.Bounds.Location.X < 50)
+            {
+                player2.Location = new Point(60, player2.Location.Y);
             }
         }
 
@@ -106,7 +127,7 @@ namespace Minergame
             KeyPreview = true;
         }
 
-        private void player1_Load(object sender, EventArgs e)
+        private void player2_Load(object sender, EventArgs e)
         {
             
         }

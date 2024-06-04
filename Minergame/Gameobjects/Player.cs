@@ -13,7 +13,7 @@ namespace Minergame.Gameobjects
         private System.ComponentModel.IContainer components;
         private PictureBox pictureBox1;
 
-        private int speed = 25;
+        private int speed = 10;
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
