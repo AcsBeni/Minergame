@@ -300,5 +300,14 @@
   <ItemGroup>
     <None Include="Resources\Vásárlásháttér1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berryshoptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berryshoptop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interakciogomb.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

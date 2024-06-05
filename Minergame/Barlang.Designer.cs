@@ -103,6 +103,8 @@ namespace Minergame
             // Interactbutton
             // 
             this.Interactbutton.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Interactbutton.BackgroundImage = global::Minergame.Properties.Resources.interakciogomb;
+            this.Interactbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Interactbutton.Location = new System.Drawing.Point(288, 60);
             this.Interactbutton.Name = "Interactbutton";
             this.Interactbutton.Size = new System.Drawing.Size(26, 29);

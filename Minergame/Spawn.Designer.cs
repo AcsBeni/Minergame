@@ -78,10 +78,13 @@ namespace Minergame
             // 
             // Interactbutton
             // 
-            this.Interactbutton.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Interactbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Interactbutton.BackgroundImage = global::Minergame.Properties.Resources.interakciogomb;
+            this.Interactbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Interactbutton.Location = new System.Drawing.Point(289, 24);
             this.Interactbutton.Name = "Interactbutton";
             this.Interactbutton.Size = new System.Drawing.Size(26, 29);
+            this.Interactbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Interactbutton.TabIndex = 5;
             this.Interactbutton.TabStop = false;
             this.Interactbutton.Visible = false;
@@ -120,9 +123,13 @@ namespace Minergame
             // 
             // Hazteto
             // 
-            this.Hazteto.Location = new System.Drawing.Point(113, 111);
+            this.Hazteto.BackColor = System.Drawing.Color.Transparent;
+            this.Hazteto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Hazteto.Image = global::Minergame.Properties.Resources.Berryshoptop1;
+            this.Hazteto.Location = new System.Drawing.Point(103, 90);
             this.Hazteto.Name = "Hazteto";
-            this.Hazteto.Size = new System.Drawing.Size(214, 321);
+            this.Hazteto.Size = new System.Drawing.Size(249, 359);
+            this.Hazteto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Hazteto.TabIndex = 9;
             this.Hazteto.TabStop = false;
             // 
@@ -142,9 +149,9 @@ namespace Minergame
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1064, 761);
+            this.Controls.Add(this.Hazteto);
             this.Controls.Add(this.player3);
             this.Controls.Add(this.bejárat);
-            this.Controls.Add(this.Hazteto);
             this.Controls.Add(this.Interactbutton);
             this.Controls.Add(this.Barry);
             this.Controls.Add(this.Anna);
@@ -177,9 +184,9 @@ namespace Minergame
         private System.Windows.Forms.PictureBox Interactbutton;
         private System.Windows.Forms.PictureBox Gold;
         private System.Windows.Forms.Label Goldamount;
-        private Gameobjects.Player player1;
+        //private Gameobjects.Player player1;
         private System.Windows.Forms.PictureBox Hazteto;
-        private Gameobjects.Player player2;
+        //private Gameobjects.Player player2;
         private Gameobjects.Player player3;
     }
 }
