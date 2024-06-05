@@ -88,6 +88,9 @@ namespace Minergame
             {
                 Hazteto.Visible = true;
             }
+
+            
+
         }
 
         private void nemfutszki()

@@ -309,5 +309,14 @@
   <ItemGroup>
     <None Include="Resources\interakciogomb.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mikeback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minerright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minerleft.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

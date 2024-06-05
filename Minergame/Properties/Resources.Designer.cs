@@ -313,9 +313,39 @@ namespace Minergame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mikeback {
+            get {
+                object obj = ResourceManager.GetObject("Mikeback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MikeCsizma {
             get {
                 object obj = ResourceManager.GetObject("MikeCsizma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minerleft {
+            get {
+                object obj = ResourceManager.GetObject("Minerleft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minerright {
+            get {
+                object obj = ResourceManager.GetObject("Minerright", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

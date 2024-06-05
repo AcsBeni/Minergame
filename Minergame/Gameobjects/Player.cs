@@ -57,18 +57,30 @@ namespace Minergame.Gameobjects
         private void Update(object sender, EventArgs e)
         {
             if (Core.IsUp)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Mikeback;
                 Top -= speed;
+            }
+
+               
             if (Core.IsDown)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Mike;
                 Top += speed;
+            }
+                
             if (Core.IsRight)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Minerleft;
                 Left += speed;
-            if (Core.IsLeft) 
+            }
+               
+            if (Core.IsLeft)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Minerright;
                 Left -= speed;
-
-
-
-
-
+            }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

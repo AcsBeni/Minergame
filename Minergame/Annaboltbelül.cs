@@ -16,6 +16,7 @@ namespace Minergame
         public bool duplaerc = false;
         public bool haste = false;
         public bool sapka = false;
+        public bool bor = false;
 
         public Annaboltbelül()
         {
@@ -56,7 +57,7 @@ namespace Minergame
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            
+            bor = true;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

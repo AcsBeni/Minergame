@@ -125,6 +125,9 @@ namespace Minergame
             this.Controls.Add(this.player3);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Barlang";
             this.Text = "Barlang";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Barlang_FormClosed);
