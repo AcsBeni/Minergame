@@ -39,7 +39,7 @@ namespace Minergame
             this.Anna = new System.Windows.Forms.PictureBox();
             this.Barry = new System.Windows.Forms.PictureBox();
             this.Hazteto = new System.Windows.Forms.PictureBox();
-            this.player2 = new Minergame.Gameobjects.Player();
+            this.player3 = new Minergame.Gameobjects.Player();
             ((System.ComponentModel.ISupportInitialize)(this.Gold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bejárat)).BeginInit();
@@ -126,13 +126,13 @@ namespace Minergame
             this.Hazteto.TabIndex = 9;
             this.Hazteto.TabStop = false;
             // 
-            // player2
+            // player3
             // 
-            this.player2.BackColor = System.Drawing.Color.Transparent;
-            this.player2.Location = new System.Drawing.Point(373, 430);
-            this.player2.Name = "player2";
-            this.player2.Size = new System.Drawing.Size(125, 186);
-            this.player2.TabIndex = 10;
+            this.player3.BackColor = System.Drawing.Color.Transparent;
+            this.player3.Location = new System.Drawing.Point(358, 399);
+            this.player3.Name = "player3";
+            this.player3.Size = new System.Drawing.Size(126, 186);
+            this.player3.TabIndex = 10;
             // 
             // Spawn
             // 
@@ -142,7 +142,7 @@ namespace Minergame
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1064, 761);
-            this.Controls.Add(this.player2);
+            this.Controls.Add(this.player3);
             this.Controls.Add(this.bejárat);
             this.Controls.Add(this.Hazteto);
             this.Controls.Add(this.Interactbutton);
@@ -180,5 +180,6 @@ namespace Minergame
         private Gameobjects.Player player1;
         private System.Windows.Forms.PictureBox Hazteto;
         private Gameobjects.Player player2;
+        private Gameobjects.Player player3;
     }
 }

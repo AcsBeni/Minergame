@@ -17,5 +17,11 @@ namespace Minergame
             InitializeComponent();
             this.CenterToScreen();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            
+        }
     }
 }
