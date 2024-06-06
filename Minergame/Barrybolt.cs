@@ -31,5 +31,10 @@ namespace Minergame
             Spawn spawn = new Spawn();
             spawn.ShowDialog();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = Itemek.penz.ToString();
+        }
     }
 }

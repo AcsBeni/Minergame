@@ -89,6 +89,8 @@ namespace Minergame
                 Hazteto.Visible = true;
             }
 
+            label1.Text = Itemek.penz.ToString();
+
             
 
         }

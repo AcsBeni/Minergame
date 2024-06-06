@@ -119,6 +119,7 @@
     <Compile Include="Gameobjects\Player.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Itemek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spawn.cs">
@@ -317,6 +318,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Minerleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pénz1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

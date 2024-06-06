@@ -32,20 +32,20 @@ namespace Minergame
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Spawn));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Goldamount = new System.Windows.Forms.Label();
-            this.Gold = new System.Windows.Forms.PictureBox();
             this.Interactbutton = new System.Windows.Forms.PictureBox();
             this.bejárat = new System.Windows.Forms.PictureBox();
             this.Anna = new System.Windows.Forms.PictureBox();
             this.Barry = new System.Windows.Forms.PictureBox();
             this.Hazteto = new System.Windows.Forms.PictureBox();
             this.player3 = new Minergame.Gameobjects.Player();
-            ((System.ComponentModel.ISupportInitialize)(this.Gold)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bejárat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Anna)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Barry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hazteto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -53,28 +53,6 @@ namespace Minergame
             this.timer1.Enabled = true;
             this.timer1.Interval = 33;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // Goldamount
-            // 
-            this.Goldamount.AutoSize = true;
-            this.Goldamount.BackColor = System.Drawing.Color.Transparent;
-            this.Goldamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Goldamount.Location = new System.Drawing.Point(54, 22);
-            this.Goldamount.Name = "Goldamount";
-            this.Goldamount.Size = new System.Drawing.Size(27, 20);
-            this.Goldamount.TabIndex = 7;
-            this.Goldamount.Text = "10";
-            // 
-            // Gold
-            // 
-            this.Gold.BackColor = System.Drawing.Color.Transparent;
-            this.Gold.Image = global::Minergame.Properties.Resources.Pénz;
-            this.Gold.Location = new System.Drawing.Point(12, 12);
-            this.Gold.Name = "Gold";
-            this.Gold.Size = new System.Drawing.Size(36, 41);
-            this.Gold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Gold.TabIndex = 6;
-            this.Gold.TabStop = false;
             // 
             // Interactbutton
             // 
@@ -141,6 +119,29 @@ namespace Minergame
             this.player3.Size = new System.Drawing.Size(126, 186);
             this.player3.TabIndex = 10;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(71, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 25);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "0";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = global::Minergame.Properties.Resources.Pénz1;
+            this.pictureBox9.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(53, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 17;
+            this.pictureBox9.TabStop = false;
+            // 
             // Spawn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,14 +150,14 @@ namespace Minergame
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1064, 761);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.Hazteto);
             this.Controls.Add(this.player3);
             this.Controls.Add(this.bejárat);
             this.Controls.Add(this.Interactbutton);
             this.Controls.Add(this.Barry);
             this.Controls.Add(this.Anna);
-            this.Controls.Add(this.Goldamount);
-            this.Controls.Add(this.Gold);
             this.DoubleBuffered = true;
             this.MaximumSize = new System.Drawing.Size(1080, 800);
             this.MinimumSize = new System.Drawing.Size(1080, 800);
@@ -165,12 +166,12 @@ namespace Minergame
             this.Load += new System.EventHandler(this.Spawn_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Spawn_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Spawn_KeyUp);
-            ((System.ComponentModel.ISupportInitialize)(this.Gold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bejárat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Anna)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Barry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Hazteto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,11 +183,11 @@ namespace Minergame
         private System.Windows.Forms.PictureBox Anna;
         private System.Windows.Forms.PictureBox bejárat;
         private System.Windows.Forms.PictureBox Interactbutton;
-        private System.Windows.Forms.PictureBox Gold;
-        private System.Windows.Forms.Label Goldamount;
         //private Gameobjects.Player player1;
         private System.Windows.Forms.PictureBox Hazteto;
         //private Gameobjects.Player player2;
         private Gameobjects.Player player3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

@@ -148,8 +148,8 @@
   <data name="Mikeback" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mikeback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Berryshoptop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Berryshoptop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Minerleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minerleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Csákány" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Csákány.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +157,14 @@
   <data name="Mike" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Berryboltja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Berryboltja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kőbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kőbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Annathanksemoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Annathanksemoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minerright" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minerright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Annanormalemoji" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Annanormalemoji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +208,8 @@
   <data name="Annaboltja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Annaboltja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kőbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kőbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Berryshoptop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Berryshoptop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Berry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Berry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +229,8 @@
   <data name="Hátter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hátter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Berryboltja" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Berryboltja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Minerright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minerright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Csizma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Csizma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,7 +241,7 @@
   <data name="rick-astley-never-gonna-give-you-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rick-astley-never-gonna-give-you-up.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minerleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minerleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pénz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pénz1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

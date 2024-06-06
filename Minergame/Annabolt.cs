@@ -31,5 +31,10 @@ namespace Minergame
             Annaboltbelül belul = new Annaboltbelül();
             belul.ShowDialog();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = Itemek.penz.ToString();
+        }
     }
 }

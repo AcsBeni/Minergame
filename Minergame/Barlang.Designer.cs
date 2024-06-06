@@ -38,10 +38,13 @@ namespace Minergame
             this.Ko2 = new System.Windows.Forms.PictureBox();
             this.player3 = new Minergame.Gameobjects.Player();
             this.Interactbutton = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Ko1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ko3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ko2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,12 +115,37 @@ namespace Minergame
             this.Interactbutton.TabStop = false;
             this.Interactbutton.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(71, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 25);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "0";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = global::Minergame.Properties.Resources.Pénz1;
+            this.pictureBox9.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(53, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 17;
+            this.pictureBox9.TabStop = false;
+            // 
             // Barlang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1064, 761);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.Interactbutton);
             this.Controls.Add(this.Ko2);
             this.Controls.Add(this.Ko3);
@@ -138,7 +166,9 @@ namespace Minergame
             ((System.ComponentModel.ISupportInitialize)(this.Ko3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ko2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -151,5 +181,7 @@ namespace Minergame
         private System.Windows.Forms.PictureBox Ko3;
         private System.Windows.Forms.PictureBox Ko2;
         private System.Windows.Forms.PictureBox Interactbutton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

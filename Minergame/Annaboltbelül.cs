@@ -12,11 +12,7 @@ namespace Minergame
 {
     public partial class Annaboltbelül : Form
     {
-        public bool csizma = false;
-        public bool duplaerc = false;
-        public bool haste = false;
-        public bool sapka = false;
-        public bool bor = false;
+        
 
         public Annaboltbelül()
         {
@@ -33,53 +29,88 @@ namespace Minergame
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            csizma = true;
-            pictureBox3.Enabled = false;
+            if (Itemek.penz>=7)
+            {
+                Itemek.csizma = true;
+                pictureBox3.Enabled = false;
+                Itemek.penz -= 7;
+            }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            duplaerc = true;
-            pictureBox1.Enabled = false;
+            if (Itemek.penz>=17)
+            {
+                Itemek.duplaerc = true;
+                pictureBox1.Enabled = false;
+                Itemek.penz -= 17;
+            }
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            haste = true;
-            pictureBox2.Enabled = false;
+            if (Itemek.penz>=27)
+            {
+                Itemek.haste = true;
+                pictureBox2.Enabled = false;
+                Itemek.penz -= 27;
+            }
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            sapka = true;
-            pictureBox5.Enabled = false;
+            if (Itemek.penz>=50)
+            {
+                Itemek.sapka = true;
+                pictureBox5.Enabled = false;
+                Itemek.penz -= 50;
+            }
+            
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            bor = true;
+            if (Itemek.penz>=80)
+            {
+                Itemek.bor = true;
+                Itemek.penz -= 80;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            string szerencse = "szerencsed lesz";
-            string balszerencs = "balszerencse";
-            string semmi = "üres";
-            Random rnd = new Random();
-            int szam = rnd.Next(1, 4);
+            if (Itemek.penz>=1)
+            {
+                Itemek.penz -= 1;
+                string szerencse = "szerencsed lesz";
+                string balszerencs = "balszerencse";
+                string semmi = "üres";
+                Random rnd = new Random();
+                int szam = rnd.Next(1, 4);
 
-            if (szam==1)
-            {
-                MessageBox.Show(szerencse);
+                if (szam == 1)
+                {
+                    MessageBox.Show(szerencse);
+                }
+                else if (szam == 2)
+                {
+                    MessageBox.Show(balszerencs);
+                }
+                else
+                {
+                    MessageBox.Show(semmi);
+                }
+
             }
-            else if (szam==2)
-            {
-                MessageBox.Show(balszerencs);
-            }
-            else
-            {
-                MessageBox.Show(semmi);
-            }
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text=  Itemek.penz.ToString();
         }
     }
 }

@@ -132,6 +132,9 @@ namespace Minergame
             {
                 Interactbutton.Visible = false;
             }
+
+            label1.Text = Itemek.penz.ToString();
+
         }
 
         private void nemfutszki()
