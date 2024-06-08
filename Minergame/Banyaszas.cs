@@ -12,6 +12,7 @@ namespace Minergame
 {
     public partial class Banyaszas : Form
     {
+        public static int hp = 40;
         public Banyaszas()
         {
             InitializeComponent();
@@ -20,8 +21,64 @@ namespace Minergame
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            
+            if (hp >= 0)
+            {
+                if (Itemek.kocsakany)
+                {
+                    hp -= 1;
+                    if (Itemek.haste)
+                    {
+                        hp -= 1;
+                    }
+                }
+                if (Itemek.gyemantcsakany)
+                {
+                    hp -= 2;
+                    if (Itemek.haste)
+                    {
+                        hp -= 2;
+                    }
+                }
+                if (Itemek.amethystcsakany)
+                {
+                    hp -= 3;
+                    if (Itemek.haste)
+                    {
+                        hp -= 3;
+                    }
+                }
+                if (Itemek.uraniumcsakany)
+                {
+                    hp -= 4;
+                    if (Itemek.haste)
+                    {
+                        hp -= 4;
+                    }
+                }
+                if (Itemek.emeraldcsakany)
+                {
+                    hp -= 5;
+                    if (Itemek.haste)
+                    {
+                        hp -= 5;
+                    }
+                }
+                if (Itemek.procsakany)
+                {
+                    hp -= 6;
+                    if (Itemek.haste)
+                    {
+                        hp -= 6;
+                    }
+                }
+            }
+            else
+            {
+                hp = 40;
+                this.Hide();
+            }
+
+
         }
     }
 }
