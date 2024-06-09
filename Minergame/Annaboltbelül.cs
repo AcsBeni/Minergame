@@ -36,8 +36,15 @@ namespace Minergame
                 Itemek.penz -= 7;
                 label2.Text = "Sold";
                 pictureBox10.Visible = false;
+                vettel();
             }
             
+        }
+
+        private void vettel()
+        {
+            pictureBox7.Visible = true;
+            pictureBox8.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -49,6 +56,7 @@ namespace Minergame
                 Itemek.penz -= 17;
                 label3.Text = "Sold";
                 pictureBox11.Visible = false;
+                vettel();
 
             }
             
@@ -63,6 +71,7 @@ namespace Minergame
                 Itemek.penz -= 27;
                 label4.Text = "Sold";
                 pictureBox12.Visible = false;
+                vettel();
             }
             
         }
@@ -76,6 +85,7 @@ namespace Minergame
                 Itemek.penz -= 50;
                 label6.Text = "Sold";
                 pictureBox14.Visible = false;
+                vettel();
             }
             
         }
@@ -88,6 +98,7 @@ namespace Minergame
                 Itemek.penz -= 80;
                 label7.Text = "Sold";
                 pictureBox15.Visible = false;
+                vettel();
             }
         }
 
