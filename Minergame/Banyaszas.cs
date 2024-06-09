@@ -80,5 +80,10 @@ namespace Minergame
 
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = Itemek.penz.ToString();
+        }
     }
 }
