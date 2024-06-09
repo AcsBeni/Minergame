@@ -34,6 +34,8 @@ namespace Minergame
                 Itemek.csizma = true;
                 pictureBox3.Enabled = false;
                 Itemek.penz -= 7;
+                label2.Text = "Sold";
+                pictureBox10.Visible = false;
             }
             
         }
@@ -45,6 +47,9 @@ namespace Minergame
                 Itemek.duplaerc = true;
                 pictureBox1.Enabled = false;
                 Itemek.penz -= 17;
+                label3.Text = "Sold";
+                pictureBox11.Visible = false;
+
             }
             
         }
@@ -56,6 +61,8 @@ namespace Minergame
                 Itemek.haste = true;
                 pictureBox2.Enabled = false;
                 Itemek.penz -= 27;
+                label4.Text = "Sold";
+                pictureBox12.Visible = false;
             }
             
         }
@@ -67,6 +74,8 @@ namespace Minergame
                 Itemek.sapka = true;
                 pictureBox5.Enabled = false;
                 Itemek.penz -= 50;
+                label6.Text = "Sold";
+                pictureBox14.Visible = false;
             }
             
         }
@@ -77,6 +86,8 @@ namespace Minergame
             {
                 Itemek.bor = true;
                 Itemek.penz -= 80;
+                label7.Text = "Sold";
+                pictureBox15.Visible = false;
             }
         }
 

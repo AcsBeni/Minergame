@@ -100,11 +100,23 @@ namespace Minergame
             {
                 Hazteto.Visible = true;
             }
-
+            vege();
             label1.Text = Itemek.penz.ToString();
 
             
 
+        }
+
+        private void vege()
+        {
+            if (Itemek.procsakany == true && Itemek.bor == true)
+            {
+                End belul = new End();
+                this.Hide();
+                belul.ShowDialog();
+                belul = null;
+                this.Show();
+            }
         }
 
         private void nemfutszki()
