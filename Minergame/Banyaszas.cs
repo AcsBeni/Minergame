@@ -81,6 +81,14 @@ namespace Minergame
                 timer1.Stop();
                 this.Close();
             }
+            if (hp <= 19 && hp>= 11)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés2;
+            }
+            else if (hp<=10)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés3;
+            }
         }
 
         private void penzadas()

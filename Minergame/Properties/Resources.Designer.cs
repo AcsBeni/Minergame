@@ -333,6 +333,26 @@ namespace Minergame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kőtörés2 {
+            get {
+                object obj = ResourceManager.GetObject("Kőtörés2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kőtörés3 {
+            get {
+                object obj = ResourceManager.GetObject("Kőtörés3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mike {
             get {
                 object obj = ResourceManager.GetObject("Mike", resourceCulture);
