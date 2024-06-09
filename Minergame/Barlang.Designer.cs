@@ -65,33 +65,36 @@ namespace Minergame
             // Ko1
             // 
             this.Ko1.BackColor = System.Drawing.Color.Transparent;
-            this.Ko1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ko1.BackgroundImage")));
             this.Ko1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ko1.Image = global::Minergame.Properties.Resources.Kő;
             this.Ko1.Location = new System.Drawing.Point(224, 367);
             this.Ko1.Name = "Ko1";
             this.Ko1.Size = new System.Drawing.Size(203, 215);
+            this.Ko1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ko1.TabIndex = 2;
             this.Ko1.TabStop = false;
             // 
             // Ko3
             // 
             this.Ko3.BackColor = System.Drawing.Color.Transparent;
-            this.Ko3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ko3.BackgroundImage")));
             this.Ko3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ko3.Image = global::Minergame.Properties.Resources.Kő;
             this.Ko3.Location = new System.Drawing.Point(742, 207);
             this.Ko3.Name = "Ko3";
             this.Ko3.Size = new System.Drawing.Size(148, 215);
+            this.Ko3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ko3.TabIndex = 3;
             this.Ko3.TabStop = false;
             // 
             // Ko2
             // 
             this.Ko2.BackColor = System.Drawing.Color.Transparent;
-            this.Ko2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ko2.BackgroundImage")));
             this.Ko2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ko2.Image = global::Minergame.Properties.Resources.Kő;
             this.Ko2.Location = new System.Drawing.Point(706, 598);
             this.Ko2.Name = "Ko2";
             this.Ko2.Size = new System.Drawing.Size(148, 71);
+            this.Ko2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ko2.TabIndex = 4;
             this.Ko2.TabStop = false;
             // 

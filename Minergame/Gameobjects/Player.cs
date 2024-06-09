@@ -71,13 +71,13 @@ namespace Minergame.Gameobjects
                 
             if (Core.IsRight)
             {
-                this.pictureBox1.Image = global::Minergame.Properties.Resources.Minerleft;
+                
                 Left += speed;
             }
                
             if (Core.IsLeft)
             {
-                this.pictureBox1.Image = global::Minergame.Properties.Resources.Minerright;
+                
                 Left -= speed;
             }
             

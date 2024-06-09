@@ -12,71 +12,60 @@ namespace Minergame
 {
     public partial class Banyaszas : Form
     {
-        public static int hp = 40;
+        public static int hp;
         public Banyaszas()
         {
             InitializeComponent();
             this.CenterToScreen();
+            timer1.Start();
+            hpadas();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void hpadas()
         {
-            if (hp >= 0)
+            if (Itemek.haste)
             {
-                if (Itemek.kocsakany)
-                {
-                    hp -= 1;
-                    if (Itemek.haste)
-                    {
-                        hp -= 1;
-                    }
-                }
-                if (Itemek.gyemantcsakany)
-                {
-                    hp -= 2;
-                    if (Itemek.haste)
-                    {
-                        hp -= 2;
-                    }
-                }
-                if (Itemek.amethystcsakany)
-                {
-                    hp -= 3;
-                    if (Itemek.haste)
-                    {
-                        hp -= 3;
-                    }
-                }
-                if (Itemek.uraniumcsakany)
-                {
-                    hp -= 4;
-                    if (Itemek.haste)
-                    {
-                        hp -= 4;
-                    }
-                }
-                if (Itemek.emeraldcsakany)
-                {
-                    hp -= 5;
-                    if (Itemek.haste)
-                    {
-                        hp -= 5;
-                    }
-                }
-                if (Itemek.procsakany)
-                {
-                    hp -= 6;
-                    if (Itemek.haste)
-                    {
-                        hp -= 6;
-                    }
-                }
+                hp = 20;
             }
             else
             {
                 hp = 40;
-                this.Hide();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+
+            hp -= 1;
+            if (Itemek.kocsakany)
+            {
+                hp -= 1;
+            }
+            if (Itemek.gyemantcsakany)
+            {
+                hp -= 2;
+            }
+            if (Itemek.amethystcsakany)
+            {
+                hp -= 3;
+            }
+            if (Itemek.uraniumcsakany)
+            {
+                hp -= 4;
+            }
+            if (Itemek.emeraldcsakany)
+            {
+                hp -= 5;
+            }
+            if (Itemek.procsakany)
+            {
+                hp -= 6;
+            }
+
+
+
+
 
 
         }
@@ -84,6 +73,21 @@ namespace Minergame
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = Itemek.penz.ToString();
+
+            label3.Text = hp.ToString();
+            if (hp == 0)
+            {
+                penzadas();
+                timer1.Stop();
+                this.Close();
+            }
         }
+
+        private void penzadas()
+        {
+            Random r = new Random();
+            Itemek.penz += r.Next(3, 7);
+        }
+
     }
 }

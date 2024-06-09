@@ -22,10 +22,10 @@ namespace Minergame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Annabolt bolt = new Annabolt();
-            bolt.ShowDialog();
+            this.Close();
         }
+
+
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {

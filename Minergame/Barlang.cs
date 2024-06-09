@@ -34,10 +34,9 @@ namespace Minergame
                 if (player3.Bounds.IntersectsWith(panel1.Bounds))
                 {
 
-                    this.Hide();
-                    Spawn belul = new Spawn();
-                    belul.ShowDialog();
+                    this.Close();
                 }
+
                 if (player3.Bounds.IntersectsWith(Ko2.Bounds))
                 {
                     if (Ko2.Enabled)

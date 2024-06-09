@@ -20,17 +20,22 @@ namespace Minergame
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Spawn spawn = new Spawn();
-            spawn.ShowDialog();
+
+
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+
             Annaboltbelül belul = new Annaboltbelül();
+            this.Hide();
             belul.ShowDialog();
+
+            belul = null;
+            this.Show();
         }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {

@@ -21,10 +21,9 @@ namespace Minergame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Barrybolt bolt = new Barrybolt();
-            bolt.ShowDialog();
+            this.Close();
         }
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -38,6 +37,8 @@ namespace Minergame
                 Itemek.procsakany = false;
                 pictureBox1.Enabled = false;
                 Itemek.penz -= 3;
+                label2.Text = "Sold";
+                pictureBox10.Visible = false;
             }
             
         }
@@ -55,6 +56,8 @@ namespace Minergame
                 Itemek.procsakany = false;
                 pictureBox2.Enabled = false;
                 Itemek.penz -= 23;
+                label3.Text = "Sold";
+                pictureBox11.Visible = false;
             }
         }
 
@@ -70,7 +73,8 @@ namespace Minergame
                 Itemek.procsakany = false;
                 pictureBox3.Enabled = false;
                 Itemek.penz -= 33;
-
+                label4.Text = "Sold";
+                pictureBox12.Visible = false;
             }
         }
 
@@ -86,6 +90,8 @@ namespace Minergame
                 Itemek.procsakany = false;
                 pictureBox4.Enabled = false;
                 Itemek.penz -= 43;
+                label5.Text = "Sold";
+                pictureBox13.Visible = false;
             }
             
         }
@@ -102,6 +108,8 @@ namespace Minergame
                 Itemek.procsakany = false;
                 pictureBox5.Enabled = false;
                 Itemek.penz -= 53;
+                label6.Text = "Sold";
+                pictureBox14.Visible = false;
             }
             
         }
@@ -118,6 +126,8 @@ namespace Minergame
                 Itemek.kocsakany = false;
                 pictureBox6.Enabled = false;
                 Itemek.penz -= 63;
+                label7.Text = "Sold";
+                pictureBox15.Visible = false;
             }
             
         }

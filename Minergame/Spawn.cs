@@ -36,23 +36,35 @@ namespace Minergame
             {
                 if (player3.Bounds.IntersectsWith(Anna.Bounds))
                 {
-                    
-                    this.Hide();
+
+
                     Annabolt belul = new Annabolt();
+                    this.Hide();
                     belul.ShowDialog();
+                    belul = null;
+                    this.Show();
                 }
                 if (player3.Bounds.IntersectsWith(Barry.Bounds))
                 {
-                    this.Hide();
+
                     Barrybolt belul = new Barrybolt();
+                    this.Hide();
                     belul.ShowDialog();
+                    belul = null;
+                    this.Show();
+
                 }
                 if (player3.Bounds.IntersectsWith(bejárat.Bounds))
                 {
-                    this.Hide();
+
                     Barlang belul = new Barlang();
+                    this.Hide();
                     belul.ShowDialog();
+                    belul = null;
+                    this.Show();
+
                 }
+
             }
         }
 
