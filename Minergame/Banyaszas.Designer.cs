@@ -62,7 +62,7 @@ namespace Minergame
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(416, 99);
+            this.label2.Location = new System.Drawing.Point(417, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 42);
             this.label2.TabIndex = 17;
@@ -74,11 +74,11 @@ namespace Minergame
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(502, 99);
+            this.label3.Location = new System.Drawing.Point(503, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 42);
+            this.label3.Size = new System.Drawing.Size(60, 42);
             this.label3.TabIndex = 18;
-            this.label3.Text = "0";
+            this.label3.Text = "40";
             // 
             // pictureBox9
             // 
@@ -95,7 +95,7 @@ namespace Minergame
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés1;
-            this.pictureBox1.Location = new System.Drawing.Point(267, 144);
+            this.pictureBox1.Location = new System.Drawing.Point(265, 182);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(477, 355);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -114,6 +114,8 @@ namespace Minergame
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox1);
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Banyaszas";
             this.Text = "Banyaszas";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

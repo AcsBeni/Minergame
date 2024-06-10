@@ -35,16 +35,16 @@ namespace Minergame
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Ko1 = new System.Windows.Forms.PictureBox();
             this.Ko3 = new System.Windows.Forms.PictureBox();
-            this.Ko2 = new System.Windows.Forms.PictureBox();
             this.player3 = new Minergame.Gameobjects.Player();
             this.Interactbutton = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.Ko2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Ko1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ko3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ko2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ko2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,18 +85,6 @@ namespace Minergame
             this.Ko3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ko3.TabIndex = 3;
             this.Ko3.TabStop = false;
-            // 
-            // Ko2
-            // 
-            this.Ko2.BackColor = System.Drawing.Color.Transparent;
-            this.Ko2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ko2.Image = global::Minergame.Properties.Resources.Kő;
-            this.Ko2.Location = new System.Drawing.Point(706, 598);
-            this.Ko2.Name = "Ko2";
-            this.Ko2.Size = new System.Drawing.Size(148, 71);
-            this.Ko2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Ko2.TabIndex = 4;
-            this.Ko2.TabStop = false;
             // 
             // player3
             // 
@@ -141,6 +129,18 @@ namespace Minergame
             this.pictureBox9.TabIndex = 17;
             this.pictureBox9.TabStop = false;
             // 
+            // Ko2
+            // 
+            this.Ko2.BackColor = System.Drawing.Color.Transparent;
+            this.Ko2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ko2.Image = global::Minergame.Properties.Resources.Kő;
+            this.Ko2.Location = new System.Drawing.Point(706, 598);
+            this.Ko2.Name = "Ko2";
+            this.Ko2.Size = new System.Drawing.Size(148, 71);
+            this.Ko2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ko2.TabIndex = 4;
+            this.Ko2.TabStop = false;
+            // 
             // Barlang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,9 +167,9 @@ namespace Minergame
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Barlang_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.Ko1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ko3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ko2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interactbutton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ko2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,9 +182,9 @@ namespace Minergame
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox Ko1;
         private System.Windows.Forms.PictureBox Ko3;
-        private System.Windows.Forms.PictureBox Ko2;
         private System.Windows.Forms.PictureBox Interactbutton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox Ko2;
     }
 }

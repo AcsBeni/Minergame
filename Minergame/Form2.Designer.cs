@@ -130,8 +130,11 @@ namespace Minergame
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "keszitok";
             this.Text = "Készítők";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.keszitok_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

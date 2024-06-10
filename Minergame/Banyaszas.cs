@@ -17,12 +17,13 @@ namespace Minergame
         {
             InitializeComponent();
             this.CenterToScreen();
-            timer1.Start();
+            
             hpadas();
         }
 
         private void hpadas()
         {
+            label1.Text = Itemek.penz.ToString();
             if (Itemek.haste)
             {
                 hp = 20;
@@ -63,38 +64,39 @@ namespace Minergame
                 hp -= 6;
             }
 
+            label3.Text = hp.ToString();
+            if (hp <= 19 && hp >= 11)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés2;
+            }
+            if (hp <= 10)
+            {
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés3;
+            }
 
+            if (hp == 0)
+            {
+                penzadas();
 
-
+                this.Close();
+            }
 
 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = Itemek.penz.ToString();
+            
 
-            label3.Text = hp.ToString();
-            if (hp == 0)
-            {
-                penzadas();
-                timer1.Stop();
-                this.Close();
-            }
-            if (hp <= 19 && hp>= 11)
-            {
-                this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés2;
-            }
-            else if (hp<=10)
-            {
-                this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés3;
-            }
+            
+            
+           
         }
 
         private void penzadas()
         {
             Random r = new Random();
-            Itemek.penz += r.Next(3, 7);
+            Itemek.penz += r.Next(5, 7);
         }
 
     }

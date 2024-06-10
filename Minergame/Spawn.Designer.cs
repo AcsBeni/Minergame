@@ -163,6 +163,7 @@ namespace Minergame
             this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Spawn";
             this.Text = "Spawn";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Spawn_FormClosed);
             this.Load += new System.EventHandler(this.Spawn_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Spawn_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Spawn_KeyUp);

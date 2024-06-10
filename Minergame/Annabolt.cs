@@ -16,12 +16,16 @@ namespace Minergame
         {
             InitializeComponent();
             this.CenterToScreen();
+            label1.Text = Itemek.penz.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
 
+            Spawn belul = new Spawn();
+            
+            belul.Show();
             this.Close();
         }
 
@@ -29,17 +33,15 @@ namespace Minergame
         {
 
             Annaboltbelül belul = new Annaboltbelül();
-            this.Hide();
-            belul.ShowDialog();
-
-            belul = null;
-            this.Show();
+            
+            belul.Show();
+            this.Close();
         }
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = Itemek.penz.ToString();
+            
         }
     }
 }

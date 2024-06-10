@@ -190,7 +190,7 @@ namespace Minergame
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
+            this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
@@ -373,6 +373,8 @@ namespace Minergame
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox8);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Annaboltbelül";
             this.Text = "Annaboltbelül";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

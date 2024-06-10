@@ -93,8 +93,11 @@ namespace Minergame
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "kezdo";
             this.Text = "Kezdőképernyő";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.kezdo_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.button1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

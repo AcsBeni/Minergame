@@ -27,6 +27,10 @@ namespace Minergame
             f2.ShowDialog();
             f2 = null;
             this.Show();
+            
+            
+            
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,9 +43,8 @@ namespace Minergame
             Spawn spawn = new Spawn();
             this.Hide();
 
-            spawn.ShowDialog();
-            spawn = null;
-            this.Show();
+            spawn.Show();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -49,10 +52,12 @@ namespace Minergame
             Spawn spawn = new Spawn();
             this.Hide();
 
-            spawn.ShowDialog();
-            spawn = null;
-            this.Show();
+            spawn.Show();
         }
 
+        private void kezdo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
     }
 }

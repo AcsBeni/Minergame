@@ -99,6 +99,8 @@ namespace Minergame
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Barrybolt";
             this.Text = "Barrybolt";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

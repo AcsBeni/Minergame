@@ -17,7 +17,8 @@ namespace Minergame
         {
             InitializeComponent();
             this.CenterToScreen();
-            
+            label1.Text = Itemek.penz.ToString();
+
         }
         
         private void Spawn_KeyDown(object sender, KeyEventArgs e)
@@ -39,29 +40,30 @@ namespace Minergame
 
 
                     Annabolt belul = new Annabolt();
-                    this.Hide();
-                    belul.ShowDialog();
-                    belul = null;
-                    this.Show();
+                    
+                    belul.Show();
+                    this.Close();
+
                 }
                 if (player3.Bounds.IntersectsWith(Barry.Bounds))
                 {
 
                     Barrybolt belul = new Barrybolt();
-                    this.Hide();
-                    belul.ShowDialog();
-                    belul = null;
-                    this.Show();
+                    
+                    
+                    belul.Show();
+                    this.Close();
 
                 }
                 if (player3.Bounds.IntersectsWith(bejárat.Bounds))
                 {
 
                     Barlang belul = new Barlang();
-                    this.Hide();
-                    belul.ShowDialog();
-                    belul = null;
-                    this.Show();
+                   
+                    
+                    
+                    belul.Show();
+                    this.Close();
 
                 }
 
@@ -75,6 +77,7 @@ namespace Minergame
             {
                 Interactbutton.Location = new Point(player3.Location.X + 50, player3.Location.Y-30);
                 Interactbutton.Visible = true;
+                
 
             }
             else if (player3.Bounds.IntersectsWith(Barry.Bounds))
@@ -101,7 +104,7 @@ namespace Minergame
                 Hazteto.Visible = true;
             }
             vege();
-            label1.Text = Itemek.penz.ToString();
+            
 
             
 
@@ -113,17 +116,16 @@ namespace Minergame
             {
                 End belul = new End();
                 this.Hide();
-                belul.ShowDialog();
-                belul = null;
-                this.Show();
+                Itemek.bor = false;
+                belul.Show();
             }
         }
 
         private void nemfutszki()
         {
-            if (player3.Bounds.Location.Y > 580)
+            if (player3.Bounds.Location.Y > 520)
             {
-                player3.Location = new Point(player3.Location.X, 570);
+                player3.Location = new Point(player3.Location.X, 510);
             }
             else if (player3.Bounds.Location.Y < 250)
             {
@@ -158,6 +160,12 @@ namespace Minergame
 
         private void player2_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void Spawn_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
             
         }
     }

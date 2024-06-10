@@ -16,6 +16,7 @@ namespace Minergame
         {
             InitializeComponent();
             this.CenterToScreen();
+            label1.Text = Itemek.penz.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,22 +24,23 @@ namespace Minergame
 
             Barryboltbelseje belul = new Barryboltbelseje();
             this.Hide();
-            belul.ShowDialog();
-            belul = null;
-            this.Show();
+            
+            belul.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
+            Spawn belul = new Spawn();
+            this.Hide();
+            belul.Show();
 
-            this.Close();
         }
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = Itemek.penz.ToString();
+            
         }
     }
 }

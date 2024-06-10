@@ -18,11 +18,17 @@ namespace Minergame
         {
             InitializeComponent();
             this.CenterToScreen();
+            label1.Text = Itemek.penz.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Annabolt belul = new Annabolt();
+            
+            belul.Show();
             this.Close();
+
+
         }
 
 
@@ -37,6 +43,7 @@ namespace Minergame
                 label2.Text = "Sold";
                 pictureBox10.Visible = false;
                 vettel();
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
@@ -57,6 +64,7 @@ namespace Minergame
                 label3.Text = "Sold";
                 pictureBox11.Visible = false;
                 vettel();
+                label1.Text = Itemek.penz.ToString();
 
             }
             
@@ -72,6 +80,7 @@ namespace Minergame
                 label4.Text = "Sold";
                 pictureBox12.Visible = false;
                 vettel();
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
@@ -86,6 +95,7 @@ namespace Minergame
                 label6.Text = "Sold";
                 pictureBox14.Visible = false;
                 vettel();
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
@@ -99,6 +109,7 @@ namespace Minergame
                 label7.Text = "Sold";
                 pictureBox15.Visible = false;
                 vettel();
+                label1.Text = Itemek.penz.ToString();
             }
         }
 
@@ -125,14 +136,14 @@ namespace Minergame
                 {
                     MessageBox.Show(semmi);
                 }
-
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text=  Itemek.penz.ToString();
+           
         }
     }
 }

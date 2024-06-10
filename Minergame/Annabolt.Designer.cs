@@ -85,7 +85,7 @@ namespace Minergame
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
+            this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Annabolt
@@ -99,6 +99,8 @@ namespace Minergame
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Annabolt";
             this.Text = "Annabolt";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

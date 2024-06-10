@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Minergame
 {
+    
     public partial class Barlang : Form
     {
+        
         public Barlang()
         {
             InitializeComponent();
@@ -33,45 +35,38 @@ namespace Minergame
             {
                 if (player3.Bounds.IntersectsWith(panel1.Bounds))
                 {
-
+                    Spawn belul = new Spawn();
+                    belul.Show();
                     this.Close();
                 }
 
                 if (player3.Bounds.IntersectsWith(Ko2.Bounds))
                 {
-                    if (Ko2.Enabled)
-                    {
-                        Banyaszas belul = new Banyaszas();
-                        belul.ShowDialog();
-                    }
-                    Ko2.Visible = false;
+
+                    Banyaszas belul = new Banyaszas();
+                    belul.Show();
                     Ko2.Enabled = false;
+                    Ko2.Visible = false;
                     
                     
                 }
                 if (player3.Bounds.IntersectsWith(Ko3.Bounds))
                 {
-                    if (Ko3.Enabled)
-                    {
-                        Banyaszas belul = new Banyaszas();
-                        belul.ShowDialog();
-                    }
-                    Ko3.Visible = false;
+                    Banyaszas belul = new Banyaszas();
+                    belul.Show();
                     Ko3.Enabled = false;
+                    Ko3.Visible = false;
 
-                   
+
                 }
                 if (player3.Bounds.IntersectsWith(Ko1.Bounds))
                 {
-                    if (Ko1.Enabled)
-                    {
-                        Banyaszas belul = new Banyaszas();
-                        belul.ShowDialog();
-                    }
-                    Ko1.Visible = false;
+                    Banyaszas belul = new Banyaszas();
+                    belul.Show();
                     Ko1.Enabled = false;
+                    Ko1.Visible = false;
 
-                    
+
                 }
 
             }
@@ -146,9 +141,9 @@ namespace Minergame
             {
                 player3.Location = new Point(player3.Location.X, 30);
             }
-            if (player3.Bounds.Location.X > 800)
+            if (player3.Bounds.Location.X > 700)
             {
-                player3.Location = new Point(790, player3.Location.Y);
+                player3.Location = new Point(690, player3.Location.Y);
             }
             else if (player3.Bounds.Location.X < 120)
             {
@@ -164,6 +159,7 @@ namespace Minergame
         private void Barlang_FormClosed(object sender, FormClosedEventArgs e)
         {
            
+            
         }
     }
 }

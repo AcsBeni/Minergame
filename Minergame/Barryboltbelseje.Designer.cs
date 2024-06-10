@@ -202,7 +202,6 @@ namespace Minergame
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox10
@@ -373,6 +372,8 @@ namespace Minergame
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox8);
             this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(1080, 800);
+            this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Barryboltbelseje";
             this.Text = "Barryboltbelseje";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

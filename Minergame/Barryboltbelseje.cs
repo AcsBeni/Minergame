@@ -17,11 +17,15 @@ namespace Minergame
         {
             InitializeComponent();
             this.CenterToScreen();
+            label1.Text = Itemek.penz.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Barrybolt belul = new Barrybolt();
+            this.Hide();
+
+            belul.Show();
         }
 
 
@@ -40,6 +44,7 @@ namespace Minergame
                 label2.Text = "Sold";
                 pictureBox10.Visible = false;
                 vetel();
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
@@ -66,6 +71,7 @@ namespace Minergame
                 label3.Text = "Sold";
                 pictureBox11.Visible = false;
                 vetel();
+                label1.Text = Itemek.penz.ToString();
             }
         }
 
@@ -84,6 +90,7 @@ namespace Minergame
                 label4.Text = "Sold";
                 pictureBox12.Visible = false;
                 vetel();
+                label1.Text = Itemek.penz.ToString();
             }
         }
 
@@ -102,6 +109,7 @@ namespace Minergame
                 label5.Text = "Sold";
                 pictureBox13.Visible = false;
                 vetel();
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
@@ -121,6 +129,7 @@ namespace Minergame
                 label6.Text = "Sold";
                 pictureBox14.Visible = false;
                 vetel();
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
@@ -140,13 +149,14 @@ namespace Minergame
                 label7.Text = "Sold";
                 pictureBox15.Visible = false;
                 vetel();
+                label1.Text = Itemek.penz.ToString();
             }
             
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = Itemek.penz.ToString();
+            
         }
     }
 }
