@@ -74,7 +74,7 @@ namespace Minergame
                 this.pictureBox1.Image = global::Minergame.Properties.Resources.Kőtörés3;
             }
 
-            if (hp == 0)
+            if (hp <= 0)
             {
                 penzadas();
 
