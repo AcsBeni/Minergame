@@ -23,9 +23,10 @@ namespace Minergame
         private void button1_Click(object sender, EventArgs e)
         {
             Barrybolt belul = new Barrybolt();
-            this.Hide();
+            
 
             belul.Show();
+            this.Close();
         }
 
 
