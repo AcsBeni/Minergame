@@ -43,5 +43,13 @@ namespace Minergame
         {
             
         }
+
+        private void Barrybolt_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            button1.Enabled = false;
+            button2.Enabled = false;
+            label1.Enabled = false;
+            pictureBox9.Enabled = false;
+        }
     }
 }

@@ -28,7 +28,12 @@ namespace Minergame
 
         private void keszitok_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            pictureBox1.Enabled = false;
+            pictureBox2.Enabled = false;
+            pictureBox3.Enabled = false;
+            pictureBox4.Enabled = false;
+
+            button1.Enabled = false;
         }
     }
 }

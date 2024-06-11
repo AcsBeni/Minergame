@@ -103,6 +103,7 @@ namespace Minergame
             this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Barrybolt";
             this.Text = "Barrybolt";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Barrybolt_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -165,7 +165,13 @@ namespace Minergame
 
         private void Spawn_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            timer1.Enabled = false;
+            Hazteto.Enabled = false;
+            player3.Enabled = false;
+            Anna.Enabled = false;
+            bejárat.Enabled = false;
+            Barry.Enabled = false;
+            Interactbutton.Enabled = false; 
             
         }
     }

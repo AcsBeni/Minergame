@@ -96,8 +96,25 @@ namespace Minergame
         private void penzadas()
         {
             Random r = new Random();
-            Itemek.penz += r.Next(5, 7);
+            if (Itemek.duplaerc)
+            {
+                Itemek.penz += r.Next(10, 14);
+            }
+            else
+            {
+                Itemek.penz += r.Next(5, 7);
+            }
+            
         }
 
+        private void Banyaszas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            pictureBox1.Enabled = false;
+            pictureBox9.Enabled = false;
+            label1.Enabled = false;
+            label3.Enabled = false;
+            label2.Enabled = false;
+            timer1.Enabled = false;
+        }
     }
 }

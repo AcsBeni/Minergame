@@ -158,7 +158,14 @@ namespace Minergame
 
         private void Barlang_FormClosed(object sender, FormClosedEventArgs e)
         {
-           
+            timer1.Enabled = false;
+            pictureBox9.Enabled = false;
+            panel1.Enabled = false;
+            Ko1.Enabled = false;
+            Ko3.Enabled = false;
+            Ko2.Enabled = false;
+            player3.Enabled = false;
+            label1.Enabled = false;
             
         }
     }

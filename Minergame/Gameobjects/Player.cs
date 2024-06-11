@@ -45,6 +45,8 @@ namespace Minergame.Gameobjects
             this.DoubleBuffered = true;
             this.Name = "Player";
             this.Size = new System.Drawing.Size(125, 186);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Player_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Player_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -57,33 +59,37 @@ namespace Minergame.Gameobjects
         private void Update(object sender, EventArgs e)
         {
             if (Core.IsUp)
-            {
-                this.pictureBox1.Image = global::Minergame.Properties.Resources.Mikeback;
                 Top -= speed;
-            }
 
-               
+
             if (Core.IsDown)
-            {
-                this.pictureBox1.Image = global::Minergame.Properties.Resources.Mike;
                 Top += speed;
-            }
-                
+
             if (Core.IsRight)
-            {
-                
                 Left += speed;
-            }
-               
+
+
             if (Core.IsLeft)
-            {
-                
                 Left -= speed;
-            }
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Player_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Core.Keyup)
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Mikeback;
+
+
+            if (e.KeyCode == Core.Keydown)
+                this.pictureBox1.Image = global::Minergame.Properties.Resources.Mike;
+        }
+
+        private void Player_KeyUp(object sender, KeyEventArgs e)
         {
 
         }

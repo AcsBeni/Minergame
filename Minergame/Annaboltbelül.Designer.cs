@@ -377,6 +377,7 @@ namespace Minergame
             this.MinimumSize = new System.Drawing.Size(1080, 800);
             this.Name = "Annaboltbelül";
             this.Text = "Annaboltbelül";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Annaboltbelül_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

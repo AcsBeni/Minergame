@@ -57,6 +57,10 @@ namespace Minergame
 
         private void kezdo_FormClosed(object sender, FormClosedEventArgs e)
         {
+            label1.Enabled = false;
+            pictureBox1.Enabled = false;
+            button1.Enabled = false;
+            button2.Enabled = false;
             
         }
     }

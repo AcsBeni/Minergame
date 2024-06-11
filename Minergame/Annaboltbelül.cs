@@ -145,5 +145,34 @@ namespace Minergame
         {
            
         }
+
+        private void Annaboltbelül_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            pictureBox1.Enabled = false;
+            pictureBox2.Enabled = false;
+            pictureBox3.Enabled = false;
+            pictureBox4.Enabled = false;
+            pictureBox5.Enabled = false;
+            pictureBox6.Enabled = false;
+            pictureBox7.Enabled = false;
+            pictureBox8.Enabled = false;
+            pictureBox9.Enabled = false;
+            pictureBox10.Enabled = false;
+            pictureBox11.Enabled = false;
+            pictureBox12.Enabled = false;
+            pictureBox13.Enabled = false;
+            pictureBox14.Enabled = false;
+            pictureBox15.Enabled = false;
+
+            label1.Enabled = false;
+            label2.Enabled = false;
+            label3.Enabled = false;
+            label4.Enabled = false;
+            label5.Enabled = false;
+            label6.Enabled = false;
+            label7.Enabled = false;
+
+            button1.Enabled = false;
+        }
     }
 }
